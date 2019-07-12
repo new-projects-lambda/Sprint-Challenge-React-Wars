@@ -42,7 +42,7 @@ const App = () => {
   return (
     <Container>
       <StyledApp>
-        <StyledH1 className="Header">React Wars</StyledH1>
+        <StyledH1 className="Header">React Wars Characters</StyledH1>
         {data.map(res => <Display data={res} key={res.name} />)}
       </StyledApp>
     </Container>
