@@ -5,6 +5,8 @@ const StyledDiv = styled.div`
     background: #cccccc99;
     width: 50%;
     color: #335577;
+    margin-bottom: 30px;
+    padding-left: 15px;
     
 `;
 
