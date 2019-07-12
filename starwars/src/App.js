@@ -30,7 +30,6 @@ const App = () => {
       'https://swapi.co/api/people/'
     )
       .then(res => {
-        console.log('response', res);
         setData(res.data.results)
       })
       .catch(err => console.log(err));
@@ -40,12 +39,11 @@ const App = () => {
     fetchData();
   }, []);
   if (!data) return <h3>Loading Data</h3>;
-  console.log(data)
   return (
     <Container>
       <StyledApp>
         <StyledH1 className="Header">React Wars</StyledH1>
-        {data.map(res => <Display data={res} />)}
+        {data.map(res => <Display data={res} key={res.name} />)}
       </StyledApp>
     </Container>
   );
