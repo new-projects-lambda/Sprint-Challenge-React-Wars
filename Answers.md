@@ -4,6 +4,10 @@
 
 1. What does it mean to think in react?
 
+Thinking in React to me means to think in components, and to pass data around 
+in props.  For me it is easiest to think of props as parameters, we just use
+attribute key: value pairs instead of variables.
+
 1. Describe state.
 
 1. Describe props.
